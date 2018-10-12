@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/group[@id='group_buttons']" position="replace_attributes">
+        <group col="6" colspan="4" id="group_buttons"/>
+    </xpath>
+    <xpath expr="/form/group[@id='group_buttons']/field[@name='state']" position="after">
+        <label name="total_cost"/>
+        <field name="total_cost"/>
+    </xpath>
+</data>
