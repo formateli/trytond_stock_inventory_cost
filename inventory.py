@@ -10,8 +10,7 @@ from trytond.modules.product import price_digits
 __all__ = ['Inventory', 'InventoryLine']
 
 
-class Inventory:
-    __metaclass__ = PoolMeta
+class Inventory(metaclass=PoolMeta):
     __name__ = 'stock.inventory'
 
     total_cost = fields.Function(
@@ -43,8 +42,7 @@ class Inventory:
             inventory.save()
 
 
-class InventoryLine:
-    __metaclass__ = PoolMeta
+class InventoryLine(metaclass=PoolMeta):
     __name__ = 'stock.inventory.line'
 
     cost_price = fields.Numeric(
