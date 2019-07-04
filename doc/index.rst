@@ -1,8 +1,8 @@
-Inventory Cost Module
-#####################
+Stock Inventory Cost
+####################
 
 Shows and stores the product cost in stock Inventory line and
-the total cost of the entire Inventory
+calculate the total cost of the Inventory
 
 One field is added to Inventory:
 

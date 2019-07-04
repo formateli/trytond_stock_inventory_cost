@@ -72,4 +72,6 @@ class InventoryLine(metaclass=PoolMeta):
         if self.cost_price is None or \
                 self.diff_quantity is None:
             return
-        return Decimal(self.diff_quantity) * self.cost_price
+        exp = Decimal(str(10.0 ** -self.unit_digits))
+        result = Decimal(self.diff_quantity) * self.cost_price
+        return result.quantize(exp)
